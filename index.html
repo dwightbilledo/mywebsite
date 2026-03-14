@@ -1,3 +1,38 @@
-<video id="hero-video" autoplay muted playsinline>
-  <source src="home.mp4" type="video/mp4">
-</video>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dwight Billedo (Home)</title>
+  <style>
+    /* Reset */
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Fullscreen video */
+    #hero-video {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      transform: translate(-50%, -50%);
+      z-index: -1; /* behind everything */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Fullscreen video -->
+  <video id="hero-video" autoplay muted playsinline>
+    <source src="home.mp4" type="video/mp4">
+  </video>
+
+</body>
+</html>
